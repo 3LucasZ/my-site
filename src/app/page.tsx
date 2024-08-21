@@ -1,95 +1,91 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+"use client";
+import ProjectCard from "@/components/ProjectCard";
+import {
+  Box,
+  Card,
+  Group,
+  Image,
+  Stack,
+  Title,
+  Text,
+  Divider,
+  SimpleGrid,
+} from "@mantine/core";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/my-site/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/my-site/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
+    <Stack>
+      <Stack align="center">
+        <Card withBorder shadow="sm" h={300} w={300} radius={200} p={0}>
+          <Image src="/my-site/images/ljz.png" />
+        </Card>
+        <Text
+          size="50px"
+          h="60px"
+          fw={700}
+          variant="gradient"
+          gradient={{ from: "red", to: "orange", deg: 90 }}
         >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+          Lucas Zheng
+        </Text>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        <Text size="25px" h="30px" fw={400} c="red">
+          Problem solver and programmer
+        </Text>
+      </Stack>
+      <Stack pl={"xl"}>
+        <Title>Projects</Title>
+        <SimpleGrid cols={3}>
+          <ProjectCard
+            src="/my-site/images/ezcheck.png"
+            title="EZCheck"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+          <ProjectCard
+            src="/my-site/images/ezfind.png"
+            title="EZFind"
+            description="A novel inventory finding and tracking system."
+          />
+          <ProjectCard
+            src="/my-site/images/underwater360.png"
+            title="Underwater360"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+          <ProjectCard
+            src="/my-site/images/flysafe.png"
+            title="FlySafe"
+            description="Cheapest, modern AGL plane flight altimeter."
+          />
+          <ProjectCard
+            src="/my-site/images/underwater360.png"
+            title="Underwater360"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+          <ProjectCard
+            src="/my-site/images/underwater360.png"
+            title="Underwater360"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+        </SimpleGrid>
+        <Title>Minis</Title>
+        <SimpleGrid cols={3}>
+          <ProjectCard
+            src="/my-site/images/ezcheck.png"
+            title="EZCheck"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+          <ProjectCard
+            src="/my-site/images/ezcheck.png"
+            title="EZCheck"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+          <ProjectCard
+            src="/my-site/images/ezcheck.png"
+            title="EZCheck"
+            description="A novel authentication IoT system to secure maker lab tools."
+          />
+        </SimpleGrid>
+      </Stack>
+    </Stack>
   );
 }
