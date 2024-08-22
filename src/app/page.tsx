@@ -33,9 +33,11 @@ export default function Home() {
           Problem solver and programmer
         </Text>
       </Stack>
-      <Stack pl={"xl"}>
+      <Stack p={"xl"}>
         <Title>Projects</Title>
-        <SimpleGrid cols={3}>
+        <Text>Click any of the cards below for more information.</Text>
+        <Title order={3}>Full-stack</Title>
+        <SimpleGrid cols={{ base: 1, xs: 2, sm: 3, md: 3, lg: 4 }}>
           <ProjectCard
             src="/my-site/images/ezcheck.png"
             title="EZCheck"
@@ -56,19 +58,9 @@ export default function Home() {
             title="FlySafe"
             description="Cheapest, modern AGL plane flight altimeter."
           />
-          <ProjectCard
-            src="/my-site/images/underwater360.png"
-            title="Underwater360"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
-          <ProjectCard
-            src="/my-site/images/underwater360.png"
-            title="Underwater360"
-            description="A novel authentication IoT system to secure maker lab tools."
-          />
         </SimpleGrid>
-        <Title>Minis</Title>
-        <SimpleGrid cols={3}>
+        <Title order={3}>Robotics</Title>
+        <SimpleGrid cols={{ base: 1, xs: 2, sm: 3, md: 3, lg: 4 }}>
           <ProjectCard
             src="/my-site/images/ezcheck.png"
             title="EZCheck"

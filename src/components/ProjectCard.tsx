@@ -15,9 +15,9 @@ export default function ProjectCard({
   const { hovered, ref } = useHover();
   return (
     <Card
-      ml={"xl"}
       withBorder
       shadow="sm"
+      radius={"lg"}
       ref={ref}
       style={
         hovered
@@ -25,6 +25,7 @@ export default function ProjectCard({
               outlineColor: theme.colors.red[3],
               outlineWidth: 5,
               outlineStyle: "solid",
+              cursor: "grab",
             }
           : {}
       }
