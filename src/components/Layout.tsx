@@ -60,6 +60,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       >
         <ActionIcon
           onClick={() => {
+            router.push("/");
+          }}
+          variant="default"
+          size="lg"
+          aria-label="home"
+        >
+          <IconHome stroke={1.5} />
+        </ActionIcon>
+        <ActionIcon
+          onClick={() => {
             router.push("https://github.com/3LucasZ");
           }}
           variant="default"

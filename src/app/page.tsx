@@ -58,19 +58,19 @@ export default function Home() {
             src="/my-site/images/ezcheck.png"
             title="EZCheck"
             description="A novel authentication IoT system to secure maker lab tools."
-            link=""
+            link="ezcheck"
           />
           <ProjectCard
             src="/my-site/images/ezfind.png"
             title="EZFind"
             description="A novel inventory finding and tracking system."
-            link=""
+            link="ezfind"
           />
           <ProjectCard
             src="/my-site/images/underwater360.png"
             title="Underwater360"
             description="A novel authentication IoT system to secure maker lab tools."
-            link=""
+            link="underwater360"
           />
           <ProjectCard
             src="/my-site/images/flysafe.png"

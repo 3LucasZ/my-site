@@ -14,16 +14,22 @@ import {
   Space,
   useComputedColorScheme,
   useMantineTheme,
+  AspectRatio,
+  rem,
+  Center,
 } from "@mantine/core";
 
 export default function Home() {
   const theme = useMantineTheme();
   const computedColorScheme = useComputedColorScheme("light");
   return (
-    <Stack>
+    <Stack p={"xl"}>
+      <Title>North Aero Inc Video</Title>
       <iframe
+        width="640"
+        height="360"
+        frameBorder={0}
         src="https://player.vimeo.com/video/855576591?h=8358392323"
-        frameBorder="0"
         allow="autoplay; fullscreen; picture-in-picture"
         allowFullScreen
       ></iframe>
