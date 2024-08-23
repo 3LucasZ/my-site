@@ -27,7 +27,7 @@ export default function ProjectCard({
   const router = useRouter();
   return (
     <Card
-      onClick={() => router.push("my-site/" + link)}
+      onClick={() => router.push("/my-site/" + link)}
       withBorder
       shadow="sm"
       radius={"lg"}
