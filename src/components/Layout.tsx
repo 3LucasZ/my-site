@@ -49,7 +49,15 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <Stack>
-      <Group justify="end" flex={1} m={12} gap={12}>
+      <Group
+        justify="end"
+        flex={1}
+        m={12}
+        gap={12}
+        pos={"absolute"}
+        left={0}
+        right={0}
+      >
         <ActionIcon
           onClick={() => {
             router.push("https://github.com/3LucasZ");
