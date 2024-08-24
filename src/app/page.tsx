@@ -15,7 +15,7 @@ import {
   useComputedColorScheme,
   useMantineTheme,
 } from "@mantine/core";
-
+const cols = { base: 1, xs: 2, sm: 3, md: 3, lg: 4 };
 export default function Home() {
   const theme = useMantineTheme();
   const computedColorScheme = useComputedColorScheme("light");
@@ -53,7 +53,7 @@ export default function Home() {
         <Title>Projects</Title>
         <Text>Click any of the cards below for more information.</Text>
         <Title order={3}>Full-stack</Title>
-        <SimpleGrid cols={{ base: 1, xs: 2, sm: 3, md: 3, lg: 4 }}>
+        <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/ezcheck.png"
             title="EZCheck"
@@ -80,7 +80,7 @@ export default function Home() {
           />
         </SimpleGrid>
         <Title order={3}>Robotics</Title>
-        <SimpleGrid cols={{ base: 1, xs: 2, sm: 3, md: 3, lg: 4 }}>
+        <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/ezcheck.png"
             title="EZCheck"
@@ -98,6 +98,21 @@ export default function Home() {
             title="EZCheck"
             description="A novel authentication IoT system to secure maker lab tools."
             link=""
+          />
+        </SimpleGrid>
+        <Title order={3}>Misc</Title>
+        <SimpleGrid cols={cols}>
+          <ProjectCard
+            src=""
+            title="Lectures"
+            description="Some lectures and demos I've given."
+            link="lectures"
+          />
+          <ProjectCard
+            src=""
+            title="Pet Arduino"
+            description="Interactive AI-powered AI pet."
+            link="petarduino"
           />
         </SimpleGrid>
       </Stack>
