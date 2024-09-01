@@ -83,10 +83,10 @@ export default function Home() {
         <Title order={3}>Robotics</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
-            src="/my-site/images/ezcheck.png"
-            title="EZCheck"
+            src="/my-site/images/jetbot.png"
+            title="Jetbot"
             description="A novel authentication IoT system to secure maker lab tools."
-            link=""
+            link="jetbot"
           />
           <ProjectCard
             src="/my-site/images/ezcheck.png"
@@ -104,15 +104,15 @@ export default function Home() {
         <Title order={3}>Misc</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
-            Icon={IconSchool}
+            src="/my-site/images/lecture.png"
             title="Lectures"
             description="Some lectures and demos I've given."
             link="lectures"
           />
           <ProjectCard
-            src=""
+            src="/my-site/images/petarduino.png"
             title="Pet Arduino"
-            description="Interactive AI-powered AI pet."
+            description="Interactive AI-powered pet."
             link="petarduino"
           />
         </SimpleGrid>

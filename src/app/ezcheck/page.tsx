@@ -2,7 +2,9 @@
 import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
 import RepositoryButton from "@/components/RepositoryButton";
+import Tech from "@/components/Tech";
 import Wave from "@/components/Waves/Waves";
+import WebappButton from "@/components/WebappButton";
 import {
   Box,
   Card,
@@ -32,6 +34,12 @@ export default function Home() {
         c1={"orange"}
         c2={"red"}
       />
+      <Text>
+        A novel IoT authentication system to secure maker lab tools. Designed to
+        provide enhanced security and controlled access to school’s expensive
+        machines. Includes a full-stack platform for administrators to manage
+        students, supervisors, and machines, streamlining operations.
+      </Text>
       <Title>Module</Title>
       <RepositoryButton href={"https://github.com/3LucasZ/EZCheck2_Module"} />
       <SimpleGrid cols={3}>
@@ -50,7 +58,27 @@ export default function Home() {
         <Image src={"/my-site/images/ezcheck/2.png"}></Image>
       </SimpleGrid>
       <Title>Dashboard</Title>
-      <RepositoryButton href={"https://github.com/3LucasZ/ezcheck-v3"} />
+      <Group>
+        <RepositoryButton href={"https://github.com/3LucasZ/ezcheck-v3"} />
+        <WebappButton href={"https://ezcheck.questportal.org"} />
+      </Group>
+      <Title>Technology</Title>
+      <Group>
+        Module
+        <Tech name="arduino" />
+        <Tech name="espressif" />
+        <Tech name="C++" />
+        Webapp
+        <Tech name="typescript" />
+        <Tech name="nextjs" />
+        <Tech name="chakra" />
+        <Tech name="prisma" />
+        <Tech name="three" />
+        Deployment
+        <Tech name="AWS" />
+        <Tech name="nginx" />
+        <Tech name="docker" />
+      </Group>
     </Stack>
   );
 }
