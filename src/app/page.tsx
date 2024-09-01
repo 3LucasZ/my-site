@@ -104,6 +104,12 @@ export default function Home() {
             link="lectures"
           />
           <ProjectCard
+            src=""
+            title="Course Projects"
+            description="Projects I made for courses I took."
+            link="courses"
+          />
+          <ProjectCard
             src="/my-site/images/petarduino.png"
             title="Pet Arduino"
             description="Interactive AI-powered pet."
@@ -114,6 +120,12 @@ export default function Home() {
             title="blockie.io"
             description="Multiplayer fighting game inspired by moomoo.io"
             link="blockie"
+          />
+          <ProjectCard
+            src="/my-site/images/ezgimbal.png"
+            title="EZGimbal"
+            description="Gimbal"
+            link="ezgimbal"
           />
         </SimpleGrid>
       </Stack>
