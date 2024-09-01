@@ -85,20 +85,14 @@ export default function Home() {
           <ProjectCard
             src="/my-site/images/jetbot.png"
             title="Jetbot"
-            description="A novel authentication IoT system to secure maker lab tools."
+            description="A remotely teleoperated Jetson Nano robot."
             link="jetbot"
           />
           <ProjectCard
-            src="/my-site/images/ezcheck.png"
-            title="EZCheck"
-            description="A novel authentication IoT system to secure maker lab tools."
-            link=""
-          />
-          <ProjectCard
-            src="/my-site/images/ezcheck.png"
-            title="EZCheck"
-            description="A novel authentication IoT system to secure maker lab tools."
-            link=""
+            src="/my-site/images/hackbot.png"
+            title="Hackbot"
+            description="A robot capable of autonomous driving, VR teleoperation, and mapping."
+            link="hackbot"
           />
         </SimpleGrid>
         <Title order={3}>Misc</Title>
@@ -106,7 +100,7 @@ export default function Home() {
           <ProjectCard
             src="/my-site/images/lecture.png"
             title="Lectures"
-            description="Some lectures and demos I've given."
+            description="Some lectures and demos Ive given."
             link="lectures"
           />
           <ProjectCard
@@ -114,6 +108,12 @@ export default function Home() {
             title="Pet Arduino"
             description="Interactive AI-powered pet."
             link="petarduino"
+          />
+          <ProjectCard
+            src="/my-site/images/blockie.png"
+            title="blockie.io"
+            description="Multiplayer fighting game inspired by moomoo.io"
+            link="blockie"
           />
         </SimpleGrid>
       </Stack>

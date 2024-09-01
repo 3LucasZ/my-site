@@ -103,7 +103,7 @@ export default function Tech({ name }: { name: string }) {
     "https://img.shields.io/badge/Meta-%230467DF.svg?style=for-the-badge&logo=Meta&logoColor=white",
     "https://img.shields.io/badge/PlatformIO-%23222.svg?style=for-the-badge&logo=platformio&logoColor=%23f5822a",
     "https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white",
-    "https://img.shields.io/badge/-RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi",
+    "https://img.shields.io/badge/RaspberryPi-C51A4A?style=for-the-badge&logo=Raspberry-Pi",
     //Servers
     "https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white",
     "https://img.shields.io/badge/gunicorn-%298729.svg?style=for-the-badge&logo=gunicorn&logoColor=white",
@@ -131,6 +131,7 @@ function srcToName(src: string) {
   const name = path
     ?.substring(0, path.indexOf("-"))
     .toLowerCase()
-    .replaceAll("%20", "");
+    .replaceAll("%20", "")
+    .replace("%23", "#");
   return name;
 }
