@@ -15,6 +15,7 @@ import {
   useComputedColorScheme,
   useMantineTheme,
 } from "@mantine/core";
+import { IconDeviceLaptop, IconSchool } from "@tabler/icons-react";
 const cols = { base: 1, xs: 2, sm: 3, md: 3, lg: 4 };
 export default function Home() {
   const theme = useMantineTheme();
@@ -103,7 +104,7 @@ export default function Home() {
         <Title order={3}>Misc</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
-            src=""
+            Icon={IconSchool}
             title="Lectures"
             description="Some lectures and demos I've given."
             link="lectures"

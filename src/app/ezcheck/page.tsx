@@ -1,5 +1,7 @@
 "use client";
+import Header from "@/components/Header";
 import ProjectCard from "@/components/ProjectCard";
+import RepositoryButton from "@/components/RepositoryButton";
 import Wave from "@/components/Waves/Waves";
 import {
   Box,
@@ -24,7 +26,14 @@ export default function Home() {
   const computedColorScheme = useComputedColorScheme("light");
   return (
     <Stack p={"xl"}>
-      <Title>Building</Title>
+      <Header
+        src={"/my-site/images/ezcheck.png"}
+        title={"EZCheck"}
+        c1={"orange"}
+        c2={"red"}
+      />
+      <Title>Module</Title>
+      <RepositoryButton href={"https://github.com/3LucasZ/EZCheck2_Module"} />
       <SimpleGrid cols={3}>
         <Image src={"/my-site/images/ezcheck/5.png"}></Image>
         <Image src={"/my-site/images/ezcheck/6.png"}></Image>
@@ -40,6 +49,8 @@ export default function Home() {
         </Stack>
         <Image src={"/my-site/images/ezcheck/2.png"}></Image>
       </SimpleGrid>
+      <Title>Dashboard</Title>
+      <RepositoryButton href={"https://github.com/3LucasZ/ezcheck-v3"} />
     </Stack>
   );
 }

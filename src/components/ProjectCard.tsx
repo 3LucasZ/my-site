@@ -6,17 +6,22 @@ import {
   Text,
   useMantineTheme,
   useComputedColorScheme,
+  Center,
 } from "@mantine/core";
 import { useHover } from "@mantine/hooks";
+import { Icon, IconProps, TablerIcon } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
+import { ForwardRefExoticComponent, RefAttributes } from "react";
 
 export default function ProjectCard({
   src,
+  Icon,
   title,
   description,
   link,
 }: {
-  src: string;
+  src?: string;
+  Icon?: ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>;
   title: string;
   description: string;
   link: string;
@@ -47,7 +52,15 @@ export default function ProjectCard({
       }
     >
       <Card.Section>
-        <Image src={src} height={160} fit="contain" alt="ezcheck" py={20} />
+        {src ? (
+          <Image src={src} height={160} fit="contain" alt="ezcheck" py={20} />
+        ) : Icon ? (
+          <Center>
+            <Icon size={160} stroke={1.5} />
+          </Center>
+        ) : (
+          "Error"
+        )}
       </Card.Section>
       <Title order={2}>{title}</Title>
       <Text>{description}</Text>

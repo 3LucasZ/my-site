@@ -52,11 +52,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <Group
         justify="end"
         flex={1}
-        m={12}
         gap={12}
+        top={12}
+        right={12}
         pos={"absolute"}
-        left={0}
-        right={0}
       >
         <ActionIcon
           onClick={() => {

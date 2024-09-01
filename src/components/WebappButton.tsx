@@ -1,18 +1,17 @@
 import { Button, Text } from "@mantine/core";
-import { IconBrandGithub } from "@tabler/icons-react";
+import { IconDevices } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
 
-export default function RepositoryButton({ href }: { href: string }) {
+export default function WebappButton({ href }: { href: string }) {
   const router = useRouter();
   return (
     <Button
       onClick={() => router.push(href)}
-      leftSection={<IconBrandGithub />}
+      leftSection={<IconDevices />}
       variant="filled"
-      color="black"
       maw={150}
     >
-      <Text>Repository</Text>
+      <Text>Webapp</Text>
     </Button>
   );
 }
