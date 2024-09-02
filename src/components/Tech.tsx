@@ -123,7 +123,7 @@ export default function Tech({ name }: { name: string }) {
   // const src =
   //   srcs.find((src) => srcToName(src) == name.toLowerCase()) || srcs[0];
 
-  return <Image src={src} maw={"200"} />;
+  return <Image src={src} maw={"200"} radius={"md"} />;
 }
 
 function srcToName(src: string) {

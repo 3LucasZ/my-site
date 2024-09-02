@@ -33,19 +33,20 @@ export default function Home() {
         title={"EZFind"}
         c1={"indigo"}
         c2={"grape"}
+        date="April 2023 - January 2024"
       />
+      <Group>
+        <RepositoryButton href={"https://github.com/3LucasZ/EZFindV2"} />
+        {/* <WebappButton href={"https://ezfind.questportal.org"} /> */}
+      </Group>
       <Text>
         An innovative inventory management webapp used across school storages
         for efficient item filling and locating. Simplifies the management of
         users, organizations, storages, and inventory and integrates a QR-code
         system and automatic label printing functionality.
       </Text>
-      <Title>Webapp</Title>
-      <Group>
-        <RepositoryButton href={"https://github.com/3LucasZ/EZFindV2"} />
-        <WebappButton href={"https://ezcheck.questportal.org"} />
-      </Group>
-      <Title>Technology</Title>
+      <Text>{"<< Demo video in progress!! >>"}</Text>
+      <Title order={3}>Made with</Title>
       <Group>
         Webapp
         <Tech name="typescript" />

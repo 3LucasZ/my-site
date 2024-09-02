@@ -21,6 +21,7 @@ import {
   AspectRatio,
   rem,
   Center,
+  List,
 } from "@mantine/core";
 
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
         title={"Underwater360"}
         c1={"blue"}
         c2={"indigo"}
+        date="May 2023 - August 2024"
       />
       <Text>
         Software for a controllable underwater 360° camera system to enhance
@@ -42,15 +44,35 @@ export default function Home() {
         Includes a desktop app for remote camera operation, featuring
         interactive 360° live streaming and customizable capture settings.
       </Text>
-      <Title>Under360</Title>
+      <Text>{"<< Demo video in progress!! >>"}</Text>
+      <Title order={2}>Under360</Title>
       <Group>
         <RepositoryButton href={"https://github.com/3LucasZ/Under360"} />
+        <List>
+          <List.Item>Android app that functions as a server.</List.Item>
+          <List.Item>
+            Accepts requests and performs operations on the camera.
+          </List.Item>
+        </List>
       </Group>
-      <Title>Water360</Title>
+      <Title order={2}>Water360</Title>
       <Group>
         <RepositoryButton href={"https://github.com/3LucasZ/Water360"} />
       </Group>
-      <Title>Technology</Title>
+      <List>
+        <List.Item>
+          Desktop app that interacts with the host, Khadas, and Under360 app.
+        </List.Item>
+        <List.Item>
+          Streamlining operations such as video previewing, youtube
+          livestreaming, and media capture, downloading, and viewing.
+        </List.Item>
+        <List.Item>Built-in interactive 360 media viewer.</List.Item>
+        <List.Item>
+          Accepts requests and performs operations on the camera.
+        </List.Item>
+      </List>
+      <Title order={3}>Using</Title>
       <Group>
         Under360
         <Tech name="android" />

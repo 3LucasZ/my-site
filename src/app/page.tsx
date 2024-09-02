@@ -1,5 +1,6 @@
 "use client";
 import ProjectCard from "@/components/ProjectCard";
+import RepositoryButton from "@/components/RepositoryButton";
 import Wave from "@/components/Waves/Waves";
 import {
   Box,
@@ -14,10 +15,19 @@ import {
   Space,
   useComputedColorScheme,
   useMantineTheme,
+  Center,
+  Button,
 } from "@mantine/core";
-import { IconDeviceLaptop, IconSchool } from "@tabler/icons-react";
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+  IconDeviceLaptop,
+  IconSchool,
+} from "@tabler/icons-react";
+import { useRouter } from "next/navigation";
 const cols = { base: 1, xs: 2, sm: 3, md: 3, lg: 4 };
 export default function Home() {
+  const router = useRouter();
   const theme = useMantineTheme();
   const computedColorScheme = useComputedColorScheme("light");
   return (
@@ -25,9 +35,9 @@ export default function Home() {
       <Stack bg={computedColorScheme === "light" ? "red" : "blue"}>
         <Stack align="center">
           <Space h={"100"} />
-          <Card withBorder shadow="sm" h={300} w={300} radius={200} p={0}>
-            <Image src="/my-site/images/ljz.png" />
-          </Card>
+
+          <Image src="/my-site/images/ljz.png" w={300} h={300} radius={150} />
+
           <Text
             size="50px"
             h="60px"
@@ -47,6 +57,35 @@ export default function Home() {
           >
             Problem solver and programmer
           </Text>
+          <Center>
+            <Group>
+              <Button
+                onClick={() => router.push("https://github.com/3LucasZ")}
+                leftSection={<IconBrandGithub />}
+                variant="filled"
+                color="black"
+                maw={150}
+              >
+                <Text>{"Github"}</Text>
+              </Button>
+              <Button
+                onClick={() =>
+                  router.push(
+                    "https://www.linkedin.com/in/lucas-zheng-7bbb60245/"
+                  )
+                }
+                leftSection={<IconBrandLinkedin />}
+                variant="filled"
+                color="#0a66c2"
+                maw={150}
+                style={{
+                  borderColor: computedColorScheme === "dark" ? "white" : "",
+                }}
+              >
+                <Text>{"LinkedIn"}</Text>
+              </Button>
+            </Group>
+          </Center>
         </Stack>
         <Wave />
       </Stack>
@@ -104,7 +143,7 @@ export default function Home() {
             link="lectures"
           />
           <ProjectCard
-            src=""
+            src="/my-site/images/courses.png"
             title="Course Projects"
             description="Projects I made for courses I took."
             link="courses"
@@ -124,7 +163,7 @@ export default function Home() {
           <ProjectCard
             src="/my-site/images/ezgimbal.png"
             title="EZGimbal"
-            description="Gimbal"
+            description="A controllable 3-axis auto-stabilizing gimbal."
             link="ezgimbal"
           />
         </SimpleGrid>

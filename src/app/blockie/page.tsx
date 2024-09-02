@@ -34,21 +34,20 @@ export default function Home() {
       <Header
         src={"/my-site/images/blockie.png"}
         title={"Blockie.io"}
-        c1={theme.colors.green[2]}
-        c2={theme.colors.teal[4]}
+        c1={theme.colors.green[4]}
+        c2={theme.colors.teal[2]}
+        date="September 2021"
       />
-      <Text>Multiplayer fighting game inspired by moomoo.io</Text>
-      <Title order={3}>Project</Title>
-      <Group>
-        <RepositoryButton href={"https://github.com/3LucasZ/blockie.io"} />
-      </Group>{" "}
+      <RepositoryButton href={"https://github.com/3LucasZ/blockie.io"} />
+      <Text>Multiplayer fighting game inspired by moomoo.io.</Text>
+      <Text>{"<< Demo video coming soon!! >>"}</Text>
       <List>
         <List.Item>Building</List.Item>
         <List.Item>Fighting</List.Item>
         <List.Item>Item bar + weapons</List.Item>
         <List.Item>Websocket server</List.Item>
       </List>
-      <Title order={3}>Technology</Title>
+      <Title order={3}>Made with</Title>
       <Group>
         <Tech name="Flutter" />
         <Tech name="Dart" />

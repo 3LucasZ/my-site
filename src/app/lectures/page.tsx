@@ -47,6 +47,7 @@ export default function Home() {
         drive path planning, and model-based control.
       </Text>
       <Title order={3}>PID Control</Title>
+      <Text>{"May 2022"}</Text>
       <RepositoryButton href="https://github.com/3LucasZ/PID-Ball-Balancer" />
       <VideoPlayer src="/my-site/images/lectures/1.mov" />
       <SlidesPlayer id="1SsCilJ8_-xjefiHWK2HbyPFe_U8Yne45-TY5TJqPWLk" />
@@ -55,10 +56,13 @@ export default function Home() {
         <Tech name="Python" />
       </Group>
       <Title order={3}>Linear Programming</Title>
+      <Text>May 2024</Text>
       <SlidesPlayer id="1QI23ldaP3E7aNKYEdA4NYThbPNhYLOIc6F2Kyz2p8-I" />
       <Title order={3}>Differential Drive Path Planning</Title>
+      <Text>December 2022 </Text>
       <SlidesPlayer id="19_3Enpmb7XumESu45YKt7CI6MsQEfUFTBCIkO0xmOqk" />
       <Title order={3}>Model-based Control</Title>
+      <Text>December 2023</Text>
       <RepositoryButton href="https://github.com/3LucasZ/OctaveProjects" />
       <VideoPlayer src="/my-site/images/lectures/2.mov" />
       <SlidesPlayer id="1UqyjvtRFV6lkt6BIjRxQEEpnAoV-z98vRXAn3W6ilLo" />

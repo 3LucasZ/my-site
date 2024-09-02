@@ -35,6 +35,7 @@ export default function Home() {
         title={"Jetbot"}
         c1={"teal"}
         c2={"green"}
+        date="June 2022 - August 2022"
       />
       <Text>
         A remotely teleoperated Jetson Nano robot. I built this project to

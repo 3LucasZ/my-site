@@ -33,8 +33,9 @@ export default function Home() {
       <Header
         src={"/my-site/images/hackbot.png"}
         title={"Hackbot"}
-        c1={"white"}
-        c2={"grey"}
+        c1={theme.colors.gray[6]}
+        c2={theme.colors.dark[1]}
+        date="November 2020 - October 2021"
       />
       <Text>
         A robot capable of autonomous driving, VR teleoperation, and mapping.
@@ -92,7 +93,9 @@ export default function Home() {
       </List>
       <Title order={3}>Autonomous Robot</Title>
       <Group>
-        <RepositoryButton href={"https://github.com/3LucasZ/hackbot-vr"} />
+        <RepositoryButton
+          href={"https://github.com/3LucasZ/Self-Driving-Robot"}
+        />
       </Group>
       <List>
         <List.Item>Streamlined data collection</List.Item>
