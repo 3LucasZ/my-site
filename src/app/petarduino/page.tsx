@@ -28,12 +28,12 @@ export default function Home() {
         <WebappButton href={"https://3lucasz.github.io/My-Pet-Arduino/HTML"} />
       </Group>
       <Text>
-        This project was my submission to Google's TensorflowLite for
-        Microcontrollers Challegne. It is an interactive AI-powered Arduino pet
+        {`This project was my submission to Google\'s TensorflowLite for
+        Microcontrollers Challenge. It is an interactive AI-powered Arduino pet
         integrating Arduino Nano, BLE, IMU, and Tensorflow to enable real-time
-        "pet emotion" tracking. The project also involved creating a website to
-        monitor the pet’s emotions. Self-taught myself TinyML through EdX
-        Harvard courses.
+        \"pet emotion\" tracking. The project also involved creating a website to
+        monitor the pet\'s emotions. Self-taught myself TinyML through EdX
+        Harvard courses.`}
       </Text>
       <Center>
         <Stack>

@@ -1,7 +1,7 @@
 {
     "editor.tabSize": 2,
     "editor.formatOnSave": true,
-    "editor.lineNumbers": "relative", 
+    "editor.lineNumbers": "on", 
     "editor.cursorSurroundingLines": 100,
     "[typescript]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
