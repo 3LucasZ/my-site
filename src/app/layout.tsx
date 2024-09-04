@@ -3,6 +3,7 @@
 import "@mantine/core/styles.css";
 import "@mantine/notifications/styles.css";
 import "./globals.css";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 import { ColorSchemeScript, MantineProvider } from "@mantine/core";
 import Layout from "@/components/Layout";
@@ -29,6 +30,7 @@ export default function RootLayout({
           <Layout>{children}</Layout>
         </MantineProvider>
       </body>
+      <GoogleAnalytics gaId="G-LK12V1VZ4Z" />
     </html>
   );
 }
