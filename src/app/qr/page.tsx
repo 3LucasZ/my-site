@@ -63,17 +63,17 @@ export default function Home() {
         <Wave />
       </Stack>
       <SimpleGrid cols={{ base: 1, md: 2 }}>
-        <Stack w={"100%"}>
-          <Text>Resume</Text>
-          <AspectRatio ratio={1} w={"100%"}>
-            <Canvas
-              text={"https://3lucasz.github.io/my-site/images/resume.pdf"}
-            />
-          </AspectRatio>
+        <Stack miw={"100%"}>
+          <Center>
+            <Title>Resume</Title>
+          </Center>
+          <Image src={"/my-site/images/qr-resume.png"} />
         </Stack>
         <Stack>
-          <Text>Website</Text>
-          <Canvas text={"https://3lucasz.github.io/my-site/"} />
+          <Center>
+            <Title>Website</Title>
+          </Center>
+          <Image src={"/my-site/images/qr-site.png"} />
         </Stack>
       </SimpleGrid>
     </Stack>
