@@ -22,6 +22,7 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconDeviceLaptop,
+  IconFileTypePdf,
   IconSchool,
 } from "@tabler/icons-react";
 import { useRouter } from "next/navigation";
@@ -59,6 +60,18 @@ export default function Home() {
           </Text>
           <Center>
             <Group>
+              <Button
+                onClick={() => router.push("/images/resume.pdf")}
+                leftSection={<IconFileTypePdf />}
+                variant="filled"
+                color="red"
+                maw={150}
+                style={{
+                  borderColor: computedColorScheme === "light" ? "white" : "",
+                }}
+              >
+                <Text>{"Resume"}</Text>
+              </Button>
               <Button
                 onClick={() => router.push("https://github.com/3LucasZ")}
                 leftSection={<IconBrandGithub />}
