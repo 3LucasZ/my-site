@@ -17,6 +17,8 @@ import {
   useMantineTheme,
   Center,
   Button,
+  Container,
+  Anchor,
 } from "@mantine/core";
 import {
   IconBrandGithub,
@@ -103,8 +105,15 @@ export default function Home() {
         <Wave />
       </Stack>
       <Stack p={"xl"}>
+        <Title>About</Title>
+        <Text size="xl">
+          Hi! I'm Lucas, and I love problem solving, programming, and making
+          projects. I am currently a student at UC Berkeley pursuing a degree in
+          Computer Science and doing undergraduate research at Carnegie Mellon
+          University.
+        </Text>
         <Title>Projects</Title>
-        <Text>Click any of the cards below for more information.</Text>
+        <Text>Click for more information</Text>
         <Title order={3}>Full-stack</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
@@ -180,6 +189,20 @@ export default function Home() {
             link="ezgimbal"
           />
         </SimpleGrid>
+        {/* <Title>Other work</Title> */}
+        {/* <Text size="xl">
+          I do freelancing and have made websites for 2 businesses.
+        </Text> */}
+        <Text size="xl">
+          One of my hobbies is competitive programming. I've solved over 1000
+          problems so far.
+        </Text>
+        <Anchor href="https://github.com/3LucasZ/CP" size="xl">
+          Java Solutions
+        </Anchor>
+        <Anchor href="https://github.com/3LucasZ/CP_C" size="xl">
+          C++ Solutions
+        </Anchor>
       </Stack>
     </Stack>
   );
