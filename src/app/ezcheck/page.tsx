@@ -22,6 +22,7 @@ import {
   rem,
   Center,
   List,
+  Grid,
 } from "@mantine/core";
 
 export default function Home() {
@@ -47,9 +48,12 @@ export default function Home() {
       <SimpleGrid cols={3}>
         <Stack>
           <Image src={"/my-site/images/ezcheck/5.png"}></Image>
-          <Text> Prototyping...</Text>
+          <Text size="xl" fw={800}>
+            {" "}
+            Prototyping...
+          </Text>
         </Stack>
-        <Image src={"/my-site/images/ezcheck/6.png"}></Image>
+        {/* <Image src={"/my-site/images/ezcheck/6.png"}></Image> */}
         <Stack>
           <Image src={"/my-site/images/ezcheck/3.png"}></Image>
           Thank you to David Bai and Cory Duce for helping with the Schematic
@@ -74,7 +78,22 @@ export default function Home() {
         <RepositoryButton href={"https://github.com/3LucasZ/ezcheck-v3"} />
         <WebappButton href={"https://ezcheck.questportal.org"} />
       </Group>
-      <Text>{"<< Demo video in progress!! >>"}</Text>
+
+      <Grid>
+        <Grid.Col span={{ base: 8, md: 6, lg: 4 }}>
+          <Image src={"/my-site/images/ezcheck/10.png"}></Image>
+        </Grid.Col>
+        <Grid.Col span={{ base: 4, md: 3, lg: 2 }}>
+          <Image src={"/my-site/images/ezcheck/7.png"}></Image>
+        </Grid.Col>
+        <Grid.Col span={{ base: 4, md: 3, lg: 2 }}>
+          <Image src={"/my-site/images/ezcheck/8.png"}></Image>
+        </Grid.Col>
+        <Grid.Col span={{ base: 4, md: 3, lg: 2 }}>
+          <Image src={"/my-site/images/ezcheck/9.png"}></Image>
+        </Grid.Col>
+      </Grid>
+      {/* <Text>{"<< Demo video in progress!! >>"}</Text> */}
       <List>
         <List.Item>
           Compatible with both computers and mobile devices.

@@ -113,8 +113,8 @@ export default function Home() {
           University.
         </Text>
         <Title>Projects</Title>
-        <Text>Click for more information</Text>
-        <Title order={3}>Full-stack</Title>
+        {/* <Text>Click for more information</Text> */}
+        <Title order={3}>Products</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/ezcheck.png"
@@ -193,7 +193,7 @@ export default function Home() {
         {/* <Text size="xl">
           I do freelancing and have made websites for 2 businesses.
         </Text> */}
-        <Text size="xl">
+        {/* <Text size="xl">
           One of my hobbies is competitive programming. I've solved over 1000
           problems so far.
         </Text>
@@ -202,7 +202,8 @@ export default function Home() {
         </Anchor>
         <Anchor href="https://github.com/3LucasZ/CP_C" size="xl">
           C++ Solutions
-        </Anchor>
+        </Anchor> */}
+        {/* <Title order={3}>Hobbies</Title> */}
       </Stack>
     </Stack>
   );

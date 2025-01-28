@@ -44,7 +44,7 @@ export default function Home() {
         Includes a desktop app for remote camera operation, featuring
         interactive 360° live streaming and customizable capture settings.
       </Text>
-      <Text>{"<< Demo video in progress!! >>"}</Text>
+      {/* <Text>{"<< Demo video in progress!! >>"}</Text> */}
       <Title order={2}>Under360</Title>
       <Group>
         <RepositoryButton href={"https://github.com/3LucasZ/Under360"} />
@@ -59,6 +59,10 @@ export default function Home() {
       <Group>
         <RepositoryButton href={"https://github.com/3LucasZ/Water360"} />
       </Group>
+      <SimpleGrid cols={{ base: 2, sm: 2, md: 2, lg: 3 }}>
+        <Image src={"/my-site/images/water360/1.png"}></Image>
+        <Image src={"/my-site/images/water360/2.png"}></Image>
+      </SimpleGrid>
       <List>
         <List.Item>
           Desktop app that interacts with the host, Khadas, and Under360 app.

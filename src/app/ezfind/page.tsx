@@ -37,7 +37,7 @@ export default function Home() {
       />
       <Group>
         <RepositoryButton href={"https://github.com/3LucasZ/EZFindV2"} />
-        {/* <WebappButton href={"https://ezfind.questportal.org"} /> */}
+        <WebappButton href={"https://ezfind.questportal.org"} />
       </Group>
       <Text>
         An innovative inventory management webapp used across school storages
@@ -45,7 +45,12 @@ export default function Home() {
         users, organizations, storages, and inventory and integrates a QR-code
         system and automatic label printing functionality.
       </Text>
-      <Text>{"<< Demo video in progress!! >>"}</Text>
+      {/* <Text>{"<< Demo video in progress!! >>"}</Text> */}
+      <SimpleGrid cols={{ base: 3, sm: 4 }}>
+        <Image src={"/my-site/images/ezfind/1.png"}></Image>
+        <Image src={"/my-site/images/ezfind/2.png"}></Image>
+        <Image src={"/my-site/images/ezfind/3.png"}></Image>
+      </SimpleGrid>
       <Title order={3}>Made with</Title>
       <Group>
         Webapp
