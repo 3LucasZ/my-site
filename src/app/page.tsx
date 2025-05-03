@@ -62,7 +62,7 @@ export default function Home() {
           </Text>
           <Center>
             <Group>
-              <Button
+              {/* <Button
                 onClick={() => router.push("/images/resume.pdf")}
                 leftSection={<IconFileTypePdf />}
                 variant="filled"
@@ -73,7 +73,7 @@ export default function Home() {
                 }}
               >
                 <Text>{"Resume"}</Text>
-              </Button>
+              </Button> */}
               <Button
                 onClick={() => router.push("https://github.com/3LucasZ")}
                 leftSection={<IconBrandGithub />}
