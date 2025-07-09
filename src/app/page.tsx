@@ -141,6 +141,21 @@ export default function Home() {
             link="flysafe"
           />
         </SimpleGrid>
+        <Title order={3}>Hackathons</Title>
+        <SimpleGrid cols={cols}>
+          <ProjectCard
+            src="/my-site/images/bubby.png"
+            title="Bubby Bear"
+            description="An emotionally intelligent teddy that detects how a child feels and guides them through fantasy, real-world missions that build motor, emotional, and social skills."
+            link="https://devpost.com/software/bubbybear"
+          />
+          <ProjectCard
+            src="/my-site/images/petarduino.png"
+            title="Pet Arduino"
+            description="Interactive AI-powered pet."
+            link="petarduino"
+          />
+        </SimpleGrid>
         <Title order={3}>Robotics</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
@@ -169,12 +184,6 @@ export default function Home() {
             title="Course Projects"
             description="Projects I made for courses I took."
             link="courses"
-          />
-          <ProjectCard
-            src="/my-site/images/petarduino.png"
-            title="Pet Arduino"
-            description="Interactive AI-powered pet."
-            link="petarduino"
           />
           <ProjectCard
             src="/my-site/images/blockie.png"

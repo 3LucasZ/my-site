@@ -30,9 +30,10 @@ export default function ProjectCard({
   const theme = useMantineTheme();
   const { hovered, ref } = useHover();
   const router = useRouter();
+  const url = link.includes("http") ? link : "/" + link;
   return (
     <Card
-      onClick={() => router.push("/" + link)}
+      onClick={() => router.push(url)}
       withBorder
       shadow="sm"
       radius={"lg"}
