@@ -105,6 +105,16 @@ export default function Home() {
         <Wave />
       </Stack>
       <Stack p={"xl"}>
+        <Title>About</Title>
+        <Text size="xl">
+          Hi! I'm Lucas, and I love problem solving, programming, and making
+          projects. I am currently a student at UC Berkeley pursuing a degree in
+          Computer Science and doing undergraduate research at Carnegie Mellon
+          University.
+        </Text>
+        <Title>Projects</Title>
+        {/* <Text>Click for more information</Text> */}
+        <Title order={3}>Products</Title>
         <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/ezcheck.png"
@@ -130,12 +140,9 @@ export default function Home() {
             description="Cheapest, modern AGL plane flight altimeter."
             link="flysafe"
           />
-          <ProjectCard
-            src="/my-site/images/profai.png"
-            title="ProfAI"
-            description="Have you ever felt lost watching a lecture? Meet ProfAI, your professor's virtual clone who answers any question you have, instantly!"
-            link="https://devpost.com/software/profai"
-          />
+        </SimpleGrid>
+        <Title order={3}>Hackathons</Title>
+        <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/bubby.png"
             title="Bubby Bear"
@@ -148,6 +155,9 @@ export default function Home() {
             description="Interactive AI-powered pet."
             link="petarduino"
           />
+        </SimpleGrid>
+        <Title order={3}>Robotics</Title>
+        <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/jetbot.png"
             title="Jetbot"
@@ -160,6 +170,9 @@ export default function Home() {
             description="A robot capable of autonomous driving, VR teleoperation, and mapping."
             link="hackbot"
           />
+        </SimpleGrid>
+        <Title order={3}>Misc</Title>
+        <SimpleGrid cols={cols}>
           <ProjectCard
             src="/my-site/images/lecture.png"
             title="Lectures"
