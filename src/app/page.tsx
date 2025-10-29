@@ -139,25 +139,25 @@ export default function Home() {
           <ProjectCard
             src="/my-site/images/bubby.png"
             title="Bubby Bear"
-            description="An emotionally intelligent teddy that detects how a child feels and guides them through fantasy, real-world missions that build motor, emotional, and social skills."
+            description="An emotionally intelligent teddy that detects how a child feels and guides them through missions that build emotional and social skills."
             link="https://devpost.com/software/bubbybear"
           />
           <ProjectCard
             src="/my-site/images/petarduino.png"
             title="Pet Arduino"
-            description="Interactive AI-powered pet."
+            description="An interactive pet powered by edge AI. Submission for Google's TensorflowLite for Microcontrollers Challenge."
             link="petarduino"
           />
           <ProjectCard
             src="/my-site/images/jetbot.png"
             title="Jetbot"
-            description="A remotely teleoperated Jetson Nano robot."
+            description="A remotely teleoperated Jetson Nano robot with a customizable dashboard."
             link="jetbot"
           />
           <ProjectCard
             src="/my-site/images/hackbot.png"
             title="Hackbot"
-            description="A robot capable of autonomous driving, VR teleoperation, and mapping."
+            description="A robot capable of autonomous driving, VR teleoperation, and SLAM with LiDAR."
             link="hackbot"
           />
           <ProjectCard

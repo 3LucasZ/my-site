@@ -38,7 +38,6 @@ export default function Home() {
         c2={theme.colors.grape[4]}
       />
 
-      <Text>Projects I made for courses I took.</Text>
       <Title order={3}>
         BR-AI-N: A Proposal for the Responsible use of AI in Brain Tumor
         Treatment
@@ -52,10 +51,14 @@ export default function Home() {
           />
         </AspectRatio>
       </Card>
+      <Divider my="md" />
+
       <Title order={3}>MusicMe: Real-Time Voice to Music Converter</Title>
       <Text>June 2024</Text>
       <Text>{"<< Documentation and demo video in progress!! >>"}</Text>
       <Text>Made with MaxMSP.</Text>
+      <Divider my="md" />
+
       <Title order={3}>COVID 19 Data Analysis</Title>
       <Text>May 2024</Text>
       <Card withBorder maw={700} radius={"lg"} p={0} shadow="lg">

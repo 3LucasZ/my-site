@@ -41,11 +41,9 @@ export default function Home() {
         c1={theme.colors.pink[4]}
         c2={theme.colors.yellow[3]}
       />
-      <Text>
-        Here are some lectures I created and delivered on math and robotics to
-        teach students! Topics: PID control, linear programming, differential
-        drive path planning, and model-based control.
-      </Text>
+      <Text>Lectures I crafted and delivered to teach students.</Text>
+      <Divider />
+
       <Title order={3}>PID Control</Title>
       <Text>{"May 2022"}</Text>
       <RepositoryButton href="https://github.com/3LucasZ/PID-Ball-Balancer" />
@@ -55,12 +53,17 @@ export default function Home() {
         <Tech name="arduino" />
         <Tech name="Python" />
       </Group>
+      <Divider />
+
       <Title order={3}>Linear Programming</Title>
       <Text>May 2024</Text>
       <SlidesPlayer id="1QI23ldaP3E7aNKYEdA4NYThbPNhYLOIc6F2Kyz2p8-I" />
+      <Divider />
       <Title order={3}>Differential Drive Path Planning</Title>
       <Text>December 2022 </Text>
       <SlidesPlayer id="19_3Enpmb7XumESu45YKt7CI6MsQEfUFTBCIkO0xmOqk" />
+      <Divider />
+
       <Title order={3}>Model-based Control</Title>
       <Text>December 2023</Text>
       <RepositoryButton href="https://github.com/3LucasZ/OctaveProjects" />
